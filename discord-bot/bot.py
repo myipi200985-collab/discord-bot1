@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands, tasks
 from discord import app_commands
@@ -13,10 +14,10 @@ from typing import Optional, Literal
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-TOKEN = config['DISCORD']['token']
-GUILD_ID = int(config['DISCORD']['guild_id'])
-OWNER_ID = int(config['OWNER']['id'])
-WEBHOOK_URL = config['WEBHOOK']['url']
+TOKEN = config['DISCORD']['MTQ4MjgxNTEzMzE2MzE5MjMzMA.GJGWlG.auKBHdyqi_dgym5tIYVmfnVgj9zHY_vLi0CEDU']
+GUILD_ID = int(config['DISCORD']['1482820212595232878'])
+OWNER_ID = int(config['OWNER']['1355194409666347173'])
+WEBHOOK_URL = config['WEBHOOK']['https://discord.com/api/webhooks/1482823213749637321/4temwzGSOAb1JaJB8lAZEVBoNhqUr6RVurwkO6n9_s6__ByUkSHKXSSaVeYrhNztO3yO']
 
 # ==================== إعدادات البوت ====================
 intents = discord.Intents.all()
